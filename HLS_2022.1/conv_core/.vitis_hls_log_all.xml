@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="conv_core" solutionName="solution1" date="2023-04-20T21:07:57.416+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'Conv_Pipeline_Input_Channel' (loop 'Input_Channel'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 0) between 'store' operation ('sum_write_ln57', conv_core.cpp:57) of variable 'sum', conv_core.cpp:65 on local variable 'sum' and 'load' operation ('sum_load_1', conv_core.cpp:65) on local variable 'sum'.&#xD;&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="conv_core" solutionName="solution1" date="2023-04-20T21:07:56.386+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'Conv_Pipeline_Input_Channel' (loop 'Input_Channel'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation ('sum_write_ln57', conv_core.cpp:57) of variable 'sum', conv_core.cpp:65 on local variable 'sum' and 'load' operation ('sum_load_1', conv_core.cpp:65) on local variable 'sum'.&#xD;&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="conv_core" solutionName="solution1" date="2023-04-20T21:07:56.378+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'Conv_Pipeline_Input_Channel' (loop 'Input_Channel'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation ('sum_write_ln57', conv_core.cpp:57) of variable 'sum', conv_core.cpp:65 on local variable 'sum' and 'load' operation ('sum_load_1', conv_core.cpp:65) on local variable 'sum'.&#xD;&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="conv_core" solutionName="solution1" date="2023-04-20T21:07:56.358+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'Conv_Pipeline_Input_Channel' (loop 'Input_Channel'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation ('sum_write_ln57', conv_core.cpp:57) of variable 'sum', conv_core.cpp:65 on local variable 'sum' and 'load' operation ('sum_load_1', conv_core.cpp:65) on local variable 'sum'.&#xD;&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html" projectName="conv_core" solutionName="solution1" date="2023-04-20T21:07:56.347+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_45_3' (conv_core.cpp:45:29) in function 'Conv' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-960.html" projectName="conv_core" solutionName="solution1" date="2023-04-20T21:07:56.133+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_50_5' (conv_core.cpp:47:15) in function 'Conv' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-960.html" projectName="conv_core" solutionName="solution1" date="2023-04-20T21:07:56.114+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'Conv_fmul_32ns_32ns_32_4_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="conv_core" solutionName="solution1" date="2023-04-20T21:08:58.738+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'Conv_fcmp_32ns_32ns_1_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="conv_core" solutionName="solution1" date="2023-04-20T21:08:56.732+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'Conv_fadd_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="conv_core" solutionName="solution1" date="2023-04-20T21:08:54.721+0800" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

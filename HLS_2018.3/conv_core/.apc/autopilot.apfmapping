@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="conv_core.h" path="C:\D_File\FPGAprj\shousiACC\HLS_2022.1\conv_core.h"/>
+    <originFiles name="conv_core.cpp" path="C:\D_File\FPGAprj\shousiACC\HLS_2022.1\conv_core.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="C:\D_File\FPGAprj\shousiACC\HLS_2022.1\main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

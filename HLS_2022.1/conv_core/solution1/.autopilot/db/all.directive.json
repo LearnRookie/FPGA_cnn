@@ -1,0 +1,35 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "Conv",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "C:\/D_File\/FPGAprj\/shousiACC\/HLS_2022.1\/conv_core\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "Conv"
+              }]
+          }
+        },
+        {
+          "functionName": "Conv",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "C:\/D_File\/FPGAprj\/shousiACC\/HLS_2022.1\/conv_core\/solution1\/csynth.tcl",
+          "sourceLine": "15",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "Conv"
+              }]
+          }
+        }
+      ]
+    }]}

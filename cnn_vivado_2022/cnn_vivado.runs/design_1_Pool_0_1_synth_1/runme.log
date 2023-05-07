@@ -1,0 +1,977 @@
+
+*** Running vivado
+    with args -log design_1_Pool_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_Pool_0_1.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_1_Pool_0_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/D_File/FPGAprj/shousiACC/HLS_2022.1/conv_core'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/D_File/FPGAprj/dla-master/stupkt/lab1_student/cnn_hls/pool_core_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/F_Software/vivado/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:Conv:1.0'. The one found in IP location 'c:/D_File/FPGAprj/shousiACC/HLS_2022.1/conv_core/solution1/impl/ip' will take precedence over the same IP in location c:/D_File/FPGAprj/shousiACC/HLS_2022.1/conv_core/solution1/impl/ip/xilinx_com_hls_Conv_1_0
+Command: synth_design -top design_1_Pool_0_1 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18664
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1667.039 ; gain = 0.000
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-8943] 'floating_point_v7_1_7' is not compiled in library 'floating_point_v7_1_7' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/ip/Pool_ap_fadd_3_full_dsp_32.vhd:57]
+WARNING: [Synth 8-8943] 'floating_point_v7_1_7' is not compiled in library 'floating_point_v7_1_7' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/ip/Pool_ap_fcmp_0_no_dsp_32.vhd:57]
+WARNING: [Synth 8-8943] 'floating_point_v7_1_7' is not compiled in library 'floating_point_v7_1_7' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/ip/Pool_ap_fdiv_14_no_dsp_32.vhd:57]
+WARNING: [Synth 8-8943] 'floating_point_v7_1_7' is not compiled in library 'floating_point_v7_1_7' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/ip/Pool_ap_uitofp_4_no_dsp_32.vhd:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_Pool_0_1' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_Pool_0_1/synth/design_1_Pool_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'Pool' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool.v:10]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'Pool_AXILiteS_s_axi' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_AXILiteS_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_AXILiteS_s_axi.v:251]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_AXILiteS_s_axi' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_AXILiteS_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Pool_gmem_m_axi' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Pool_gmem_m_axi_throttl' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:709]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_gmem_m_axi_throttl' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:709]
+INFO: [Synth 8-6157] synthesizing module 'Pool_gmem_m_axi_write' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:1702]
+INFO: [Synth 8-6157] synthesizing module 'Pool_gmem_m_axi_fifo' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:419]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_gmem_m_axi_fifo' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:419]
+INFO: [Synth 8-6157] synthesizing module 'Pool_gmem_m_axi_reg_slice' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:315]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_gmem_m_axi_reg_slice' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:315]
+INFO: [Synth 8-6157] synthesizing module 'Pool_gmem_m_axi_fifo__parameterized0' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:419]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_gmem_m_axi_fifo__parameterized0' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:419]
+INFO: [Synth 8-6157] synthesizing module 'Pool_gmem_m_axi_buffer' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:528]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_gmem_m_axi_buffer' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:528]
+INFO: [Synth 8-6157] synthesizing module 'Pool_gmem_m_axi_fifo__parameterized1' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:419]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_gmem_m_axi_fifo__parameterized1' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:419]
+INFO: [Synth 8-6157] synthesizing module 'Pool_gmem_m_axi_fifo__parameterized2' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:419]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_gmem_m_axi_fifo__parameterized2' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:419]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_gmem_m_axi_write' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:1702]
+INFO: [Synth 8-6157] synthesizing module 'Pool_gmem_m_axi_read' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:905]
+INFO: [Synth 8-6157] synthesizing module 'Pool_gmem_m_axi_buffer__parameterized0' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:528]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_gmem_m_axi_buffer__parameterized0' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:528]
+INFO: [Synth 8-6157] synthesizing module 'Pool_gmem_m_axi_reg_slice__parameterized0' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:315]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_gmem_m_axi_reg_slice__parameterized0' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:315]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_gmem_m_axi_read' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:905]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_gmem_m_axi' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Pool_fadd_32ns_32bkb' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_fadd_32ns_32bkb.v:11]
+INFO: [Synth 8-638] synthesizing module 'Pool_ap_fadd_3_full_dsp_32' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/ip/Pool_ap_fadd_3_full_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-637] synthesizing blackbox instance 'U0' of component 'floating_point_v7_1_7' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/ip/Pool_ap_fadd_3_full_dsp_32.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'Pool_ap_fadd_3_full_dsp_32' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/ip/Pool_ap_fadd_3_full_dsp_32.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_fadd_32ns_32bkb' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_fadd_32ns_32bkb.v:11]
+INFO: [Synth 8-6157] synthesizing module 'Pool_fdiv_32ns_32cud' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_fdiv_32ns_32cud.v:11]
+INFO: [Synth 8-638] synthesizing module 'Pool_ap_fdiv_14_no_dsp_32' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/ip/Pool_ap_fdiv_14_no_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 1 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 14 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-637] synthesizing blackbox instance 'U0' of component 'floating_point_v7_1_7' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/ip/Pool_ap_fdiv_14_no_dsp_32.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'Pool_ap_fdiv_14_no_dsp_32' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/ip/Pool_ap_fdiv_14_no_dsp_32.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_fdiv_32ns_32cud' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_fdiv_32ns_32cud.v:11]
+INFO: [Synth 8-6157] synthesizing module 'Pool_uitofp_32ns_dEe' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_uitofp_32ns_dEe.v:11]
+INFO: [Synth 8-638] synthesizing module 'Pool_ap_uitofp_4_no_dsp_32' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/ip/Pool_ap_uitofp_4_no_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 4 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-637] synthesizing blackbox instance 'U0' of component 'floating_point_v7_1_7' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/ip/Pool_ap_uitofp_4_no_dsp_32.vhd:198]
+INFO: [Synth 8-256] done synthesizing module 'Pool_ap_uitofp_4_no_dsp_32' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/ip/Pool_ap_uitofp_4_no_dsp_32.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_uitofp_32ns_dEe' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_uitofp_32ns_dEe.v:11]
+INFO: [Synth 8-6157] synthesizing module 'Pool_fcmp_32ns_32eOg' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_fcmp_32ns_32eOg.v:11]
+INFO: [Synth 8-638] synthesizing module 'Pool_ap_fcmp_0_no_dsp_32' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/ip/Pool_ap_fcmp_0_no_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 1 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 1 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-637] synthesizing blackbox instance 'U0' of component 'floating_point_v7_1_7' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/ip/Pool_ap_fcmp_0_no_dsp_32.vhd:202]
+INFO: [Synth 8-256] done synthesizing module 'Pool_ap_fcmp_0_no_dsp_32' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/ip/Pool_ap_fcmp_0_no_dsp_32.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_fcmp_32ns_32eOg' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_fcmp_32ns_32eOg.v:11]
+INFO: [Synth 8-6157] synthesizing module 'Pool_udiv_16ns_8nfYi' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_udiv_16ns_8nfYi.v:157]
+INFO: [Synth 8-6157] synthesizing module 'Pool_udiv_16ns_8nfYi_div' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_udiv_16ns_8nfYi.v:85]
+INFO: [Synth 8-6157] synthesizing module 'Pool_udiv_16ns_8nfYi_div_u' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_udiv_16ns_8nfYi.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_udiv_16ns_8nfYi_div_u' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_udiv_16ns_8nfYi.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_udiv_16ns_8nfYi_div' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_udiv_16ns_8nfYi.v:85]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_udiv_16ns_8nfYi' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_udiv_16ns_8nfYi.v:157]
+INFO: [Synth 8-6157] synthesizing module 'Pool_mul_mul_16s_g8j' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_mul_mul_16s_g8j.v:13]
+INFO: [Synth 8-6157] synthesizing module 'Pool_mul_mul_16s_g8j_DSP48_0' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_mul_mul_16s_g8j.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_mul_mul_16s_g8j_DSP48_0' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_mul_mul_16s_g8j.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_mul_mul_16s_g8j' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_mul_mul_16s_g8j.v:13]
+INFO: [Synth 8-6157] synthesizing module 'Pool_mac_muladd_1hbi' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_mac_muladd_1hbi.v:33]
+INFO: [Synth 8-6157] synthesizing module 'Pool_mac_muladd_1hbi_DSP48_1' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_mac_muladd_1hbi.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_mac_muladd_1hbi_DSP48_1' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_mac_muladd_1hbi.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'Pool_mac_muladd_1hbi' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_mac_muladd_1hbi.v:33]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool.v:1686]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool.v:1750]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool.v:1792]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool.v:1798]
+INFO: [Synth 8-6155] done synthesizing module 'Pool' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_Pool_0_1' (0#1) [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_Pool_0_1/synth/design_1_Pool_0_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element sect_end_buf_reg was removed.  [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:2069]
+WARNING: [Synth 8-6014] Unused sequential element sect_end_buf_reg was removed.  [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_gmem_m_axi.v:1253]
+WARNING: [Synth 8-7129] Port reset in module Pool_uitofp_32ns_dEe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Pool_fdiv_32ns_32cud is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Pool_fadd_32ns_32bkb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RID[0] in module Pool_gmem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RUSER[0] in module Pool_gmem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rreq_cache[3] in module Pool_gmem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rreq_cache[2] in module Pool_gmem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rreq_cache[1] in module Pool_gmem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rreq_cache[0] in module Pool_gmem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rreq_prot[2] in module Pool_gmem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rreq_prot[1] in module Pool_gmem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rreq_prot[0] in module Pool_gmem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rreq_user[0] in module Pool_gmem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BID[0] in module Pool_gmem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUSER[0] in module Pool_gmem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wreq_cache[3] in module Pool_gmem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wreq_cache[2] in module Pool_gmem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wreq_cache[1] in module Pool_gmem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wreq_cache[0] in module Pool_gmem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wreq_prot[2] in module Pool_gmem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wreq_prot[1] in module Pool_gmem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wreq_prot[0] in module Pool_gmem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wreq_user[0] in module Pool_gmem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata_user[0] in module Pool_gmem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWID[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWSIZE[2] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWSIZE[1] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWSIZE[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWBURST[1] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWBURST[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWLOCK[1] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWLOCK[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_WID[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_WLAST in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARID[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARSIZE[2] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARSIZE[1] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARSIZE[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARBURST[1] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARBURST[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARLOCK[1] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARLOCK[0] in module Pool_gmem_m_axi is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1731.000 ; gain = 63.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1731.000 ; gain = 63.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1731.000 ; gain = 63.961
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 1731.000 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_Pool_0_1/constraints/Pool_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_Pool_0_1/constraints/Pool_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.runs/design_1_Pool_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.runs/design_1_Pool_0_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1805.445 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 1808.188 ; gain = 2.742
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:31 . Memory (MB): peak = 1808.188 ; gain = 141.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:31 . Memory (MB): peak = 1808.188 ; gain = 141.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.runs/design_1_Pool_0_1_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:31 . Memory (MB): peak = 1808.188 ; gain = 141.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'Pool_AXILiteS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'Pool_AXILiteS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Pool_gmem_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Pool_gmem_m_axi_reg_slice__parameterized0'
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_8_reg_1202_reg' and it is trimmed from '48' to '32' bits. [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool.v:1118]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ret_V_2_reg_1077_reg' and it is trimmed from '48' to '32' bits. [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool.v:1070]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'Pool_AXILiteS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'Pool_AXILiteS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Pool_gmem_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Pool_gmem_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:33 . Memory (MB): peak = 1808.188 ; gain = 141.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/Pool_mac_muladd_1hbi_U8' (Pool_mac_muladd_1hbi) to 'inst/Pool_mac_muladd_1hbi_U9'
+INFO: [Synth 8-223] decloning instance 'inst/Pool_mac_muladd_1hbi_U8' (Pool_mac_muladd_1hbi) to 'inst/Pool_mac_muladd_1hbi_U10'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 9     
+	   3 Input   32 Bit       Adders := 4     
+	   2 Input   20 Bit       Adders := 2     
+	   3 Input   17 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 7     
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 10    
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 8     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               76 Bit    Registers := 1     
+	               64 Bit    Registers := 6     
+	               48 Bit    Registers := 1     
+	               36 Bit    Registers := 3     
+	               35 Bit    Registers := 3     
+	               34 Bit    Registers := 2     
+	               32 Bit    Registers := 46    
+	               30 Bit    Registers := 4     
+	               20 Bit    Registers := 2     
+	               19 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 36    
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 25    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 11    
+	                1 Bit    Registers := 69    
++---Multipliers : 
+	              17x32  Multipliers := 1     
+	              16x32  Multipliers := 1     
++---RAMs : 
+	               9K Bit	(256 X 36 bit)          RAMs := 1     
+	               8K Bit	(256 X 35 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   76 Bit        Muxes := 1     
+	  77 Input   76 Bit        Muxes := 1     
+	   2 Input   72 Bit        Muxes := 1     
+	   2 Input   71 Bit        Muxes := 1     
+	   2 Input   68 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 2     
+	   2 Input   54 Bit        Muxes := 1     
+	   2 Input   53 Bit        Muxes := 2     
+	   2 Input   47 Bit        Muxes := 1     
+	   2 Input   40 Bit        Muxes := 1     
+	   2 Input   38 Bit        Muxes := 1     
+	   2 Input   36 Bit        Muxes := 2     
+	   2 Input   35 Bit        Muxes := 1     
+	   2 Input   34 Bit        Muxes := 1     
+	  13 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 26    
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   29 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 1     
+	   2 Input   22 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 4     
+	   2 Input   15 Bit        Muxes := 2     
+	   4 Input   12 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 11    
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 1     
+	   8 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 6     
+	   2 Input    2 Bit        Muxes := 39    
+	   3 Input    2 Bit        Muxes := 9     
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 72    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'Pool_udiv_16ns_8nfYi_div_U/Pool_udiv_16ns_8nfYi_div_u_0/remd_tmp_reg' and it is trimmed from '16' to '15' bits. [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool_udiv_16ns_8nfYi.v:42]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ret_V_4_reg_1113_reg' and it is trimmed from '48' to '32' bits. [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/verilog/Pool.v:765]
+DSP Report: Generating DSP ret_V_2_fu_529_p2, operation Mode is: A2*B''.
+DSP Report: register ret_V_2_fu_529_p2 is absorbed into DSP ret_V_2_fu_529_p2.
+DSP Report: register ret_V_2_fu_529_p2 is absorbed into DSP ret_V_2_fu_529_p2.
+DSP Report: register ret_V_2_fu_529_p2 is absorbed into DSP ret_V_2_fu_529_p2.
+DSP Report: operator ret_V_2_fu_529_p2 is absorbed into DSP ret_V_2_fu_529_p2.
+DSP Report: operator ret_V_2_fu_529_p2 is absorbed into DSP ret_V_2_fu_529_p2.
+DSP Report: Generating DSP ret_V_2_reg_1077_reg, operation Mode is: (PCIN>>17)+A''*B2.
+DSP Report: register ret_V_5_reg_250_reg is absorbed into DSP ret_V_2_reg_1077_reg.
+DSP Report: register ret_V_2_reg_1077_reg is absorbed into DSP ret_V_2_reg_1077_reg.
+DSP Report: register ret_V_2_reg_1077_reg is absorbed into DSP ret_V_2_reg_1077_reg.
+DSP Report: register ret_V_2_reg_1077_reg is absorbed into DSP ret_V_2_reg_1077_reg.
+DSP Report: operator ret_V_2_fu_529_p2 is absorbed into DSP ret_V_2_reg_1077_reg.
+DSP Report: operator ret_V_2_fu_529_p2 is absorbed into DSP ret_V_2_reg_1077_reg.
+DSP Report: Generating DSP ret_V_3_reg_1108_reg, operation Mode is: (A''*B)'.
+DSP Report: register ret_V_3_reg_1108_reg is absorbed into DSP ret_V_3_reg_1108_reg.
+DSP Report: register ret_V_3_reg_1108_reg is absorbed into DSP ret_V_3_reg_1108_reg.
+DSP Report: register ret_V_3_reg_1108_reg is absorbed into DSP ret_V_3_reg_1108_reg.
+DSP Report: operator Pool_mul_mul_16s_g8j_U7/Pool_mul_mul_16s_g8j_DSP48_0_U/p is absorbed into DSP ret_V_3_reg_1108_reg.
+DSP Report: Generating DSP ret_V_4_fu_583_p2, operation Mode is: A*B''.
+DSP Report: register ret_V_4_fu_583_p2 is absorbed into DSP ret_V_4_fu_583_p2.
+DSP Report: register ret_V_4_fu_583_p2 is absorbed into DSP ret_V_4_fu_583_p2.
+DSP Report: operator ret_V_4_fu_583_p2 is absorbed into DSP ret_V_4_fu_583_p2.
+DSP Report: operator ret_V_4_fu_583_p2 is absorbed into DSP ret_V_4_fu_583_p2.
+DSP Report: Generating DSP ret_V_4_reg_1113_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register ret_V_4_reg_1113_reg is absorbed into DSP ret_V_4_reg_1113_reg.
+DSP Report: register ret_V_4_reg_1113_reg is absorbed into DSP ret_V_4_reg_1113_reg.
+DSP Report: register ret_V_4_reg_1113_reg is absorbed into DSP ret_V_4_reg_1113_reg.
+DSP Report: operator ret_V_4_fu_583_p2 is absorbed into DSP ret_V_4_reg_1113_reg.
+DSP Report: operator ret_V_4_fu_583_p2 is absorbed into DSP ret_V_4_reg_1113_reg.
+DSP Report: Generating DSP Pool_mac_muladd_1hbi_U8/Pool_mac_muladd_1hbi_DSP48_1_U/p, operation Mode is: C+A''*B2.
+DSP Report: register w_V_reg_1128_reg is absorbed into DSP Pool_mac_muladd_1hbi_U8/Pool_mac_muladd_1hbi_DSP48_1_U/p.
+DSP Report: register Pool_mac_muladd_1hbi_U8/Pool_mac_muladd_1hbi_DSP48_1_U/p is absorbed into DSP Pool_mac_muladd_1hbi_U8/Pool_mac_muladd_1hbi_DSP48_1_U/p.
+DSP Report: register Pool_mac_muladd_1hbi_U8/Pool_mac_muladd_1hbi_DSP48_1_U/p is absorbed into DSP Pool_mac_muladd_1hbi_U8/Pool_mac_muladd_1hbi_DSP48_1_U/p.
+DSP Report: operator Pool_mac_muladd_1hbi_U8/Pool_mac_muladd_1hbi_DSP48_1_U/p is absorbed into DSP Pool_mac_muladd_1hbi_U8/Pool_mac_muladd_1hbi_DSP48_1_U/p.
+DSP Report: operator Pool_mac_muladd_1hbi_U8/Pool_mac_muladd_1hbi_DSP48_1_U/m is absorbed into DSP Pool_mac_muladd_1hbi_U8/Pool_mac_muladd_1hbi_DSP48_1_U/p.
+DSP Report: Generating DSP ret_V_reg_969_reg, operation Mode is: (A2*B2)'.
+DSP Report: register lhs_V_reg_955_reg is absorbed into DSP ret_V_reg_969_reg.
+DSP Report: register rhs_V_reg_962_reg is absorbed into DSP ret_V_reg_969_reg.
+DSP Report: register ret_V_reg_969_reg is absorbed into DSP ret_V_reg_969_reg.
+DSP Report: operator ret_V_fu_426_p2 is absorbed into DSP ret_V_reg_969_reg.
+WARNING: [Synth 8-7129] Port reset in module Pool_uitofp_32ns_dEe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Pool_fdiv_32ns_32cud is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Pool_fadd_32ns_32bkb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BID[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUSER[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RID[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RUSER[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWID[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWSIZE[2] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWSIZE[1] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWSIZE[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWBURST[1] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWBURST[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWLOCK[1] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWLOCK[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWCACHE[3] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWCACHE[2] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWCACHE[1] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWCACHE[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWPROT[2] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWPROT[1] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWPROT[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_AWUSER[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_WID[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_WLAST in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_WUSER[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARID[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARSIZE[2] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARSIZE[1] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARSIZE[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARBURST[1] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARBURST[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARLOCK[1] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARLOCK[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARCACHE[3] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARCACHE[2] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARCACHE[1] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARCACHE[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARPROT[2] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARPROT[1] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARPROT[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_ARUSER[0] in module Pool_gmem_m_axi is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (Pool_AXILiteS_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (Pool_AXILiteS_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[47]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[46]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[45]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[44]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[43]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[42]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[41]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[40]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[39]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[38]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[37]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[36]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[35]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[34]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[33]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[32]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[31]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[30]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[29]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[28]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[27]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[26]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[25]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[24]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[23]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[22]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[21]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[20]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[19]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[18]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_2_reg_1077_reg[17]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[47]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[46]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[45]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[44]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[43]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[42]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[41]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[40]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[39]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[38]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[37]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[36]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[35]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[34]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[33]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[32]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[31]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[30]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[29]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[28]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[27]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[26]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[25]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[24]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[23]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[22]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[21]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[20]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[19]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[18]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (ret_V_4_reg_1113_reg[17]) is unused and will be removed from module Pool.
+WARNING: [Synth 8-3332] Sequential element (next_mul1_reg_1059_reg) is unused and will be removed from module Pool.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:38 . Memory (MB): peak = 1808.188 ; gain = 141.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | Pool_gmem_m_axi_U/bus_write/buff_wdata/mem_reg | 256 x 36(READ_FIRST)   | W |   | 256 x 36(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst        | Pool_gmem_m_axi_U/bus_read/buff_rdata/mem_reg  | 256 x 35(READ_FIRST)   | W |   | 256 x 35(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++------------+------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Pool        | A2*B''            | 18     | 17     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|Pool        | (PCIN>>17)+A''*B2 | 17     | 16     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|Pool        | (A''*B)'          | 17     | 16     | -      | -      | 33     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|Pool        | A*B''             | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|Pool        | (PCIN>>17)+A''*B  | 17     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|Pool        | C+A''*B2          | 17     | 16     | 32     | -      | 32     | 2    | 1    | 0    | -    | -     | 0    | 0    | 
+|Pool        | (A2*B2)'          | 8      | 8      | -      | -      | 16     | 1    | 1    | -    | -    | -     | 1    | 0    | 
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:45 . Memory (MB): peak = 1808.188 ; gain = 141.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:45 . Memory (MB): peak = 1808.188 ; gain = 141.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | Pool_gmem_m_axi_U/bus_write/buff_wdata/mem_reg | 256 x 36(READ_FIRST)   | W |   | 256 x 36(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst        | Pool_gmem_m_axi_U/bus_read/buff_rdata/mem_reg  | 256 x 35(READ_FIRST)   | W |   | 256 x 35(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++------------+------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/Pool_gmem_m_axi_U/bus_write/buff_wdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Pool_gmem_m_axi_U/bus_read/buff_rdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:46 . Memory (MB): peak = 1808.188 ; gain = 141.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:49 . Memory (MB): peak = 1808.188 ; gain = 141.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:49 . Memory (MB): peak = 1808.188 ; gain = 141.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:49 . Memory (MB): peak = 1808.188 ; gain = 141.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:49 . Memory (MB): peak = 1808.188 ; gain = 141.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:49 . Memory (MB): peak = 1808.188 ; gain = 141.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:49 . Memory (MB): peak = 1808.188 ; gain = 141.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name    | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | mem_reg[4]  | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | mem_reg[4]  | 64     | 64         | 64     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | mem_reg[14] | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | mem_reg[4]  | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Pool        | A'*B''             | 17     | 16     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|Pool        | (PCIN>>17+A''*B')' | 16     | 15     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|Pool        | (A''*B)'           | 16     | 18     | -      | -      | 32     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|Pool        | A*B''              | 17     | 16     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|Pool        | (PCIN>>17+A''*B)'  | 16     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|Pool        | ((A'*B')')'        | 8      | 8      | -      | -      | 16     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|Pool        | C+A''*B'           | 16     | 18     | 48     | -      | 32     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
++------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+----------------------+----------+
+|      |BlackBox name         |Instances |
++------+----------------------+----------+
+|1     |floating_point_v7_1_7 |         4|
++------+----------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------+------+
+|      |Cell                       |Count |
++------+---------------------------+------+
+|1     |floating_point_v7_1_7_bbox |     4|
+|5     |CARRY4                     |   140|
+|6     |DSP48E1                    |     7|
+|13    |LUT1                       |    22|
+|14    |LUT2                       |   311|
+|15    |LUT3                       |   514|
+|16    |LUT4                       |   360|
+|17    |LUT5                       |   162|
+|18    |LUT6                       |   265|
+|19    |MUXF7                      |     1|
+|20    |RAMB18E1                   |     2|
+|21    |SRL16E                     |    68|
+|22    |FDRE                       |  2607|
+|23    |FDSE                       |     4|
++------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:49 . Memory (MB): peak = 1808.188 ; gain = 141.148
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 112 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:39 . Memory (MB): peak = 1808.188 ; gain = 63.961
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:49 . Memory (MB): peak = 1808.188 ; gain = 141.148
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1818.730 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 150 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1828.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: fe1cb723
+INFO: [Common 17-83] Releasing license: Synthesis
+97 Infos, 168 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:54 . Memory (MB): peak = 1828.398 ; gain = 161.359
+INFO: [Common 17-1381] The checkpoint 'C:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.runs/design_1_Pool_0_1_synth_1/design_1_Pool_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_Pool_0_1, cache-ID = 897dc541787c562e
+INFO: [Coretcl 2-1174] Renamed 34 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.runs/design_1_Pool_0_1_synth_1/design_1_Pool_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_Pool_0_1_utilization_synth.rpt -pb design_1_Pool_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 20 21:55:50 2023...

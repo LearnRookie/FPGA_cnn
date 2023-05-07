@@ -1,0 +1,6 @@
+   Build using "C:/F_Software/vivado/Vitis_HLS/2022.1/tps/win64/msys64/mingw64/bin/g++"
+   Compiling main.cpp_pre.cpp.tb.cpp
+   Compiling conv_core.cpp_pre.cpp.tb.cpp
+   Compiling apatb_Conv.cpp
+   Compiling apatb_Conv_ir.ll
+   Generating cosim.tv.exe

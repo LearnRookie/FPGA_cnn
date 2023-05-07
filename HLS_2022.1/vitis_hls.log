@@ -1,0 +1,52 @@
+INFO: [HLS 200-10] Running 'C:/F_Software/vivado/Vitis_HLS/2022.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user '12807' on host 'wang' (Windows NT_amd64 version 6.2) on Thu Apr 20 21:08:39 +0800 2023
+INFO: [HLS 200-10] In directory 'C:/D_File/FPGAprj/shousiACC/HLS_2022.1'
+Sourcing Tcl script 'C:/D_File/FPGAprj/shousiACC/HLS_2022.1/conv_core/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: source C:/D_File/FPGAprj/shousiACC/HLS_2022.1/conv_core/solution1/export.tcl
+INFO: [HLS 200-1510] Running: open_project conv_core 
+INFO: [HLS 200-10] Opening project 'C:/D_File/FPGAprj/shousiACC/HLS_2022.1/conv_core'.
+INFO: [HLS 200-1510] Running: set_top Conv 
+INFO: [HLS 200-1510] Running: add_files conv_core.h 
+INFO: [HLS 200-10] Adding design file 'conv_core.h' to the project
+INFO: [HLS 200-1510] Running: add_files conv_core.cpp 
+INFO: [HLS 200-10] Adding design file 'conv_core.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb main.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'main.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/D_File/FPGAprj/shousiACC/HLS_2022.1/conv_core/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./conv_core/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name Conv Conv 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/F_Software/vivado/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'Conv_fadd_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Conv_fadd_32ns_32ns_32_5_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Conv_fadd_32ns_32ns_32_5_full_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'Conv_fcmp_32ns_32ns_1_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Conv_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Conv_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'Conv_fmul_32ns_32ns_32_4_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Conv_fmul_32ns_32ns_32_4_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Conv_fmul_32ns_32ns_32_4_max_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/F_Software/vivado/Vivado/2022.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 20 21:08:58 2023...
+INFO: [HLS 200-802] Generated output file conv_core/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 18.165 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 0 seconds. Total elapsed time: 20.02 seconds; peak allocated memory: 1.465 GB.

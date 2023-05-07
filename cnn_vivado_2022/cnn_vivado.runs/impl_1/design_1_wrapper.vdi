@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Apr 20 22:12:54 2023
+# Process ID: 19568
+# Current directory: C:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: C:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.runs/impl_1/design_1_wrapper.vdi
+# Journal file: C:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.runs/impl_1\vivado.jou
+# Running On: Wang, OS: Windows, CPU Frequency: 3494 MHz, CPU Physical cores: 14, Host memory: 16957 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/D_File/FPGAprj/shousiACC/HLS_2022.1/conv_core'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/D_File/FPGAprj/dla-master/stupkt/lab1_student/cnn_hls/pool_core_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/F_Software/vivado/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:Conv:1.0'. The one found in IP location 'c:/D_File/FPGAprj/shousiACC/HLS_2022.1/conv_core/solution1/impl/ip' will take precedence over the same IP in location c:/D_File/FPGAprj/shousiACC/HLS_2022.1/conv_core/solution1/impl/ip/xilinx_com_hls_Conv_1_0
+Command: link_design -top design_1_wrapper -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_Conv_0_0/design_1_Conv_0_0.dcp' for cell 'design_1_i/Conv_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_Pool_0_1/design_1_Pool_0_1.dcp' for cell 'design_1_i/Pool_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1.dcp' for cell 'design_1_i/rst_ps7_0_50M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0.dcp' for cell 'design_1_i/smartconnect_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/design_1_smartconnect_0_1.dcp' for cell 'design_1_i/smartconnect_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.404 . Memory (MB): peak = 1666.980 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 825 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/bd_48ac_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/bd_48ac_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/bd_48ac_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/bd_48ac_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/bd_0/ip/ip_1/bd_886d_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_1/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/bd_0/ip/ip_1/bd_886d_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_1/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/bd_0/ip/ip_1/bd_886d_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_1/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/bd_0/ip/ip_1/bd_886d_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_1/inst/clk_map/psr_aclk/U0'
+INFO: [Project 1-1714] 38 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'design_1_Pool_0_1_floating_point_v7_1_7' instantiated as 'design_1_i/Pool_0/inst/Pool_fadd_32ns_32bkb_U1/Pool_ap_fadd_3_full_dsp_32_u/U0'. 3 instances of this cell are unresolved black boxes. [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/ip/Pool_ap_fadd_3_full_dsp_32.vhd:203]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'floating_point_v7_1_7_HD11' instantiated as 'design_1_i/Pool_0/inst/Pool_uitofp_32ns_dEe_U3/Pool_ap_uitofp_4_no_dsp_32_u/U0' [c:/D_File/FPGAprj/shousiACC/cnn_vivado_2022/cnn_vivado.gen/sources_1/bd/design_1/ipshared/a748/hdl/ip/Pool_ap_uitofp_4_no_dsp_32.vhd:198]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1666.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 110 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 110 instances
+
+20 Infos, 1 Warnings, 2 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1666.980 ; gain = 0.000
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC INBB-3] Black Box Instances: Cell 'design_1_i/Pool_0/inst/Pool_fadd_32ns_32bkb_U1/Pool_ap_fadd_3_full_dsp_32_u/U0' of type 'design_1_Pool_0_1_floating_point_v7_1_7' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.
+ERROR: [DRC INBB-3] Black Box Instances: Cell 'design_1_i/Pool_0/inst/Pool_fcmp_32ns_32eOg_U4/Pool_ap_fcmp_0_no_dsp_32_u/U0' of type 'design_1_Pool_0_1_floating_point_v7_1_7' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.
+ERROR: [DRC INBB-3] Black Box Instances: Cell 'design_1_i/Pool_0/inst/Pool_fdiv_32ns_32cud_U2/Pool_ap_fdiv_14_no_dsp_32_u/U0' of type 'design_1_Pool_0_1_floating_point_v7_1_7' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.
+ERROR: [DRC INBB-3] Black Box Instances: Cell 'design_1_i/Pool_0/inst/Pool_uitofp_32ns_dEe_U3/Pool_ap_uitofp_4_no_dsp_32_u/U0' of type 'floating_point_v7_1_7_HD11' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.
+INFO: [Project 1-461] DRC finished with 4 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.545 . Memory (MB): peak = 1666.980 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+25 Infos, 1 Warnings, 2 Critical Warnings and 5 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 20 22:13:10 2023...
